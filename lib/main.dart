@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: SpeechScreen(),
+      home: HomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
