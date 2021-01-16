@@ -108,7 +108,7 @@ class _SpeechScreenState extends State<SpeechScreen> {
               ),
               Expanded(
                 child: Container(
-                  color: Palette.orange,
+                  color: Palette.cream,
                   child: Column(
                     children: [
                       // Row(
@@ -121,30 +121,33 @@ class _SpeechScreenState extends State<SpeechScreen> {
                       //     Text('blah'),
                       //   ],
                       // ),
-                      Container(
-                        // height: 450,
-                        margin: EdgeInsets.all(30),
-                        decoration: BoxDecoration(
-                          color: Palette.white,
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(10),
+                      Expanded(
+                        child: Container(
+                          // height: 450,
+                          margin: EdgeInsets.all(30),
+                          decoration: BoxDecoration(
+                            color: Palette.white,
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(10),
+                            ),
                           ),
-                        ),
-                        child: Card(
-                          elevation: 6,
-                          child: SingleChildScrollView(
-                            reverse: true,
-                            child: Container(
-                              padding:
-                                  const EdgeInsets.fromLTRB(30, 30, 30, 150),
-                              // ignore: missing_required_param
-                              child: TextHighlight(
-                                text: _text,
-                                words: _highlights,
-                                textStyle: const TextStyle(
-                                  fontSize: 32.0,
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.w400,
+                          child: Card(
+                            elevation: 6,
+                            child: SingleChildScrollView(
+                              reverse: true,
+                              child: Container(
+                                padding:
+                                    const EdgeInsets.fromLTRB(30, 30, 30, 150),
+                                // ignore: missing_required_param
+                                child: TextHighlight(
+                                  textAlign: TextAlign.center,
+                                  text: _text,
+                                  words: _highlights,
+                                  textStyle: const TextStyle(
+                                    fontSize: 32.0,
+                                    color: Palette.grey,
+                                    fontWeight: FontWeight.w400,
+                                  ),
                                 ),
                               ),
                             ),
